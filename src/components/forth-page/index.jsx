@@ -1,5 +1,6 @@
 import { Container, Flexible } from "../../GlobalStyle";
 import { ForthPageBlock } from "./fortg-page-block";
+import AttendanceGuests from "../attendance/AttendanceGuests";
 import { ForthPagePart, ForthPagePartContext } from "./styled";
 import Church from "../../assets/image/church.jpeg";
 import Restaurant from "../../assets/image/restaurant.jpg";
@@ -48,7 +49,7 @@ export const ForthPage = () => {
         </h1>
       </div>
 
-      <div className="text-center my-14">
+      <div className="text-center">
         <h2>Դետալներ</h2>
         <Flexible className="relative">
           <img src={Bant} className="mx-auto my-8 grayscale" />
@@ -62,6 +63,7 @@ export const ForthPage = () => {
           </Flexible>
         </Flexible>
       </div>
+      <AttendanceGuests />
     </ForthPagePart>
   );
 };
