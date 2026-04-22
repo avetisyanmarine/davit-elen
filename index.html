@@ -1,18 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html lang="hy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Դավիթ և Էլեն</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="preload" href="/font/ArmAllegroU.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/font/ArmenianDecorativeU-Italic.ttf" as="font" type="font/woff2" crossorigin>
-  <link rel="icon" type="image/svg+xml" href="/wedding.jpg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wedding-Day</title>
-</head>
+    <!-- 1. Հիմնական Մետա Թեգեր -->
+    <meta
+      name="description"
+      content="Սիրով հրավիրում ենք ձեզ մեր հարսանյաց հանդեսին"
+    />
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+    <!-- 2. Open Graph թեգեր (Սա է ապահովում նկարը WhatsApp-ում և Facebook-ում) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://davit-elen.vercel.app/" />
+    <meta property="og:title" content="Դավիթ և Էլեն" />
+    <meta
+      property="og:description"
+      content="Սիրով հրավիրում ենք ձեզ մեր հարսանյաց հանդեսին"
+    />
 
+    <!-- ԿԱՐԵՎՈՐ: Նկարի հասցեն պետք է լինի լրիվ (https-ով), որպեսզի սոցցանցերը տեսնեն -->
+    <meta
+      property="og:image"
+      content="https://davit-elen.vercel.app/wedding.jpg"
+    />
+
+    <!-- 3. Twitter-ի համար (ըստ ցանկության) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://davit-elen.vercel.app/" />
+    <meta property="twitter:title" content="Դավիթ և Էլեն" />
+    <meta
+      property="twitter:description"
+      content="Սիրով հրավիրում ենք ձեզ մեր հարսանյաց հանդեսին"
+    />
+    <meta
+      property="twitter:image"
+      content="https://davit-elen.vercel.app/wedding.jpg"
+    />
+
+    <!-- 4. Ֆոնտերի Preload -->
+    <link
+      rel="preload"
+      href="/font/ArmAllegroU.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/font/ArmenianDecorativeU-Italic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <!-- 5. Favicon (փոքրիկ պատկերը browser-ի tab-ի վրա) -->
+    <link rel="icon" type="image/jpeg" href="/wedding.jpg" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

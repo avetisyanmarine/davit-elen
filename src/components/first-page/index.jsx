@@ -6,12 +6,17 @@ import Srtik from "../../assets/image/srtik.png";
 export const FirstPage = () => {
   return (
     <FirstPagePart>
-      <img className="grayscale contrast-125 brightness-105" src={MainPhoto} />
+      <img className="grayscale" src={MainPhoto} />
       <Container>
         <FirstPagePartContext>
-          <div className="mt-5 text-[#efefef]">
+          <div
+            className="mt-5 text-[#030303]"
+            style={{
+              textShadow: "4px 2px 10px rgba(255, 255, 255, 0.7)",
+            }}
+          >
             <h2>Հարսանյաց</h2>
-            <h2 className="ml-35 mt-2">հրավեր</h2>
+            <h2 className="ml-35 mt-2">Հրավեր</h2>
           </div>
           <Flexible>
             <h1
@@ -21,7 +26,7 @@ export const FirstPage = () => {
                 textShadow: "2px 2px 6px rgba(0,0,0,0.7)",
               }}
             >
-              Գևորգ & Սյուզաննա
+              Դավիթ & Էլեն
             </h1>
             <img src={Srtik} className="absolute bottom-10" />
           </Flexible>

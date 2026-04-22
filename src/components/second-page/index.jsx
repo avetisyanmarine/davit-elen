@@ -1,11 +1,11 @@
 import { SecondPagePart, GridDiv } from "./styled";
 import { Container, Flexible } from "../../GlobalStyle";
 import { useEffect, useState } from "react";
-import Photo2 from "../../assets/image/photo2.jpg";
+import Photo2 from "../../assets/image/examp2.jpg";
 import { ThirdPagePartCalendar } from "../third-page/styled";
 
 export const SecondPage = () => {
-  const weddingDate = new Date(2026, 2, 1, 0, 0, 0);
+  const weddingDate = new Date(2026, 5, 13, 0, 0, 0);
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -79,7 +79,7 @@ export const SecondPage = () => {
           </GridDiv>
         </div>
         <h2 className="mt-10" data-aos="zoom-in" data-aos-offset="400">
-          Մարտ
+          Հունիս
         </h2>
         <ThirdPagePartCalendar
           data-aos="fade-up"
@@ -97,8 +97,8 @@ export const SecondPage = () => {
             </div>
           ))}
           {[...Array(37)].map((_, i) =>
-            i > 5 && i <= 36 ? (
-              <div className={i - 5 == 1 ? "special" : ""}>{i - 5}</div>
+            i > -1 && i <= 29 ? (
+              <div className={i - 5 == 7 ? "special" : ""}>{i + 1}</div>
             ) : (
               <div className=""></div>
             ),
@@ -108,11 +108,7 @@ export const SecondPage = () => {
       <div className="mt-10 mb-15">
         <h2
           className="mb-10"
-          data-aos="fade-up"
-          data-aos-offset="400"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-duration="600"
-          data-aos-delay="300"
+          // data-aos="fade-up"
         >
           Սիրելի հյուրեր
         </h2>
@@ -123,10 +119,7 @@ export const SecondPage = () => {
           </p>
         </Flexible>
       </div>
-      <img
-        src={Photo2}
-        className="w-full grayscale contrast-125 brightness-105"
-      />
+      <img src={Photo2} className="w-full grayscale" />
     </SecondPagePart>
   );
 };

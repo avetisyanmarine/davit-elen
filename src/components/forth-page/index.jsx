@@ -1,9 +1,9 @@
 import { Container, Flexible } from "../../GlobalStyle";
 import { ForthPageBlock } from "./fortg-page-block";
 import { ForthPagePart, ForthPagePartContext } from "./styled";
-import Church from "../../assets/image/gayane.jpg";
+import Church from "../../assets/image/church.jpeg";
 import Restaurant from "../../assets/image/restaurant.jpg";
-import Photo3 from "../../assets/image/photo3.jpg";
+import Photo3 from "/wedding.jpg";
 import Bant from "../../assets/image/bant.png";
 
 export const ForthPage = () => {
@@ -13,13 +13,13 @@ export const ForthPage = () => {
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Սուրբ Գայանե եկեղեցի"}
-            mapSrc={"https://maps.app.goo.gl/VyLXsTENTBxsTU987"}
+            bigText={"Սուրբ Մարիամ Աստվածածին"}
+            mapSrc={"https://maps.app.goo.gl/vCrGmtiMMiCcEpN37"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
-            bigText={"Նոր Դվին Ռեստորանային Համալիր"}
-            mapSrc={"https://maps.app.goo.gl/35zzYY99W9wpDqpM7"}
+            bigText={"Վան Մյուզիք հոլլ"}
+            mapSrc={"https://maps.app.goo.gl/NiDCaqoHAJq8iQBv7"}
           />
         </ForthPagePartContext>
       </Container>
@@ -34,13 +34,14 @@ export const ForthPage = () => {
             fontFamily: "SaveTheDate", // Այստեղ համոզվեք, որ տառատեսակի անունը ճիշտ է
             textAlign: "center",
             color: "#1e1e1e",
-            fontSize: "2rem", // սա text-4xl-ն է
-            fontWeight: "600", // սա font-bold-ն է
-            marginTop: "2.5rem", // սա mt-10-ն է
-            position: "absolute", // սա absolute-ն է
-            top: "-36px",
+            fontSize: "2rem",
+            fontWeight: "800",
+            marginTop: "2.5rem",
+            position: "absolute",
+            textShadow: "2px 2px 6px rgba(193, 184, 184, 0.7)",
+            top: "-16px",
             left: "50%",
-            transform: "translateX(-50%)", // սա -translate-x-1/2-ն է
+            transform: "translateX(-50%)",
           }}
         >
           Save the Date

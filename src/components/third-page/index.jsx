@@ -17,34 +17,19 @@ export const ThirdPage = () => {
         <h2>Ծրագիր</h2>
         <ThirdPagePartContext>
           <ThirdPageBlock
-            imageSize={0}
-            ImageSrc={null}
-            number={"13:00"}
-            bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
-            smallText="գ․ Մուսալեռ Տիգրան Մեծ 19/2"
-          />
-          <ThirdPageBlock
-            uniqueMargin={50}
-            imageSize={147}
-            ImageSrc={Haverjutyun}
-            number={"13:30"}
-            bigText="ՀԱՐՍԻ ՏՈՒՆ"
-            smallText="ք․ Էջմիածին, Չարենց 4/37"
-          />
-          <ThirdPageBlock
             imageSize={114}
             ImageSrc={Church}
-            number={"14:30"}
+            number={"15:30"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Սուրբ Գայանե եկեղեցի"
+            smallText="Սուրբ Մարիամ Աստվածածին"
           />
           <ThirdPageBlock
             line={true}
             ImageSrc={Kenac}
             imageSize={159}
-            number={"17:30"}
+            number={"17:00"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Նոր Դվին Ռեստորան"
+            smallText="Վան Մյուզիք հոլլ"
           />
         </ThirdPagePartContext>
         <ThirdPagePartMini>
