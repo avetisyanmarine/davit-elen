@@ -8,7 +8,7 @@ export const ForthPageBlock = ({ ImageSrc, bigText, mapSrc }) => {
         <img
           loading="lazy"
           src={ImageSrc}
-          className="grayscale contrast-125 brightness-105"
+          className="grayscale"
         />
         <Flexible>
           <svg
